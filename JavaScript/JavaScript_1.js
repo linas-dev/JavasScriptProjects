@@ -18,7 +18,7 @@ function selectColor() {
             break;
         case 'Grey':
             colorOutput = 'Grey' + colorString;
-            break;
+            break;    
         default:
             colorOutput = 'Enter a color exactly as written on the above list';
     }    
