@@ -1,6 +1,6 @@
 function selectColor() {
     var colorOutput;
-    var colors = document.getElementById('color-input').value;
+    var colors = document.getElementById('color-input').value; 
     var colorString = " is a great color"
 
     switch (colors) {
@@ -21,6 +21,6 @@ function selectColor() {
             break;
         default:
             colorOutput = 'Enter a color exactly as written on the above list';
-    }
+    }    
     document.getElementById('output').innerHTML += colorOutput;
 }
