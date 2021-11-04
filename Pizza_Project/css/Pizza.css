@@ -93,3 +93,15 @@ button {
 button:hover {
   background-color: var(--clr-accent);
 }
+
+.cr{
+  font-size: 10px;
+  width: 110vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cr a {
+  color: lightgray;
+  text-decoration: none;
+}
