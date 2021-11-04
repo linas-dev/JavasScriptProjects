@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --clr-accent: #0aff11;
+}
+
+body {
+  padding: 2rem;
+  font-size: 1.3rem;
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  background: #061e22;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.even-fieldsets {
+  display: flex;
+}
+
+.cart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 110px;
+}
+
+.cart,
+.showText {
+  font-size: 15px;
+  color: lightgray;
+}
+
+input {
+  accent-color: var(--clr-accent);
+}
+
+header {
+  text-align: center;
+  width: 100vh;
+  margin: 1rem auto;
+}
+
+main {
+  border-radius: 5px;
+  width: 110vh;
+  margin: 1rem auto;
+  padding: 1em;
+  background: black;
+  gap: 2em;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+main > *:not(.cart) {
+  grid-column: 2 / -1;
+}
+
+legend {
+  background-color: var(--clr-accent);
+  padding: 0.2em 1em;
+  color: #061e22;
+}
+
+fieldset {
+  padding: 1rem;
+  margin: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+h1 {
+  font-size: 70px;
+  color: lightgray;
+}
+
+button {
+  border-radius: 1px;
+  border: none;
+  padding: 0.4rem;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--clr-accent);
+}

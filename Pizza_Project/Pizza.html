@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/Pizza.css">
+  <script defer src="js/Pizza.js"></script>
+  <title>Pizza Drill Demo</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Pizza Drill 🍕</h1>
+    <button onclick="getReceipt()">Place Your Order</button>
+  </header>
+
+  <main class="grid">
+
+    <div class="cart">
+      <div id="showText"></div>
+      <div id="totalPrice"></div>
+    </div>
+    <div class="even-fieldsets">
+      <fieldset>
+        <legend>Choose Size: </legend>
+
+        <label><input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza </label>
+
+        <label><input class="size" type="radio" name="Size" value="Small Pizza"> Small Pizza</label>
+
+        <label><input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza </label>
+
+        <label><input class="size" type="radio" name="Size" value="Large Pizza"> Large Pizza </label>
+
+        <label><input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Meats: </legend>
+
+        <label><input value="Pepperoni" name="Topping" class="toppings" type="checkbox"> Pepperoni </label>
+
+        <label><input value="Sausage" name="Topping" class="toppings" type="checkbox"> Sausage </label>
+
+        <label><input value="Canadian Bacon" name="Topping" class="toppings" type="checkbox"> Canadian Bacon </label>
+
+        <label><input value="Ground Beef" name="Topping" class="toppings" type="checkbox"> Ground Beef </label>
+
+        <label><input value="Anchovy" name="Topping" class="toppings" type="checkbox"> Anchovy </label>
+
+        <label><input value="Chicken" name="Topping" class="toppings" type="checkbox"> Chicken </label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Vegetables: </legend>
+
+        <label><input value="Mushrooms" name="Topping" class="toppings" type="checkbox"> Mushrooms </label>
+
+        <label><input value="Onions" name="Topping" class="toppings" type="checkbox"> Onions </label>
+
+        <label><input value="Tomatoes" name="Topping" class="toppings" type="checkbox"> Tomatoes </label>
+
+        <label><input value="Olives" name="Topping" class="toppings" type="checkbox"> Olives </label>
+
+        <label><input value="Green Peppers" name="Topping" class="toppings" type="checkbox"> Green Peppers </label>
+
+      </fieldset>
+    </div>
+  </main>
+
+</body>
+
+</html>
