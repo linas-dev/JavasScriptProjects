@@ -13,6 +13,6 @@ $(document).ready(function() {
   );
   $("#2").css({"color":"red"});
   $("#3").click(function() {
-    $('h1').hide().fada();
+    $('h1').hide().fadeOut();
   })
 });
